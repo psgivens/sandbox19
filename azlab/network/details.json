@@ -1,0 +1,168 @@
+[
+  {
+    "additionalCapabilities": null,
+    "availabilitySet": null,
+    "billingProfile": null,
+    "diagnosticsProfile": null,
+    "evictionPolicy": null,
+    "fqdns": "",
+    "hardwareProfile": {
+      "vmSize": "Standard_B1ls"
+    },
+    "host": null,
+    "id": "/subscriptions/535a7df7-2f2d-441e-9991-72add147f2a7/resourceGroups/psg_networklab20190916/providers/Microsoft.Compute/virtualMachines/AppServer",
+    "identity": null,
+    "licenseType": null,
+    "location": "westus",
+    "macAddresses": "00-0D-3A-59-B3-F8",
+    "name": "AppServer",
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/535a7df7-2f2d-441e-9991-72add147f2a7/resourceGroups/psg_networklab20190916/providers/Microsoft.Network/networkInterfaces/AppServerVMNic",
+          "primary": null,
+          "resourceGroup": "psg_networklab20190916"
+        }
+      ]
+    },
+    "osProfile": {
+      "adminPassword": null,
+      "adminUsername": "azureuser",
+      "allowExtensionOperations": true,
+      "computerName": "AppServer",
+      "customData": null,
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": false,
+        "provisionVmAgent": true,
+        "ssh": null
+      },
+      "requireGuestProvisionSignal": true,
+      "secrets": [],
+      "windowsConfiguration": null
+    },
+    "plan": null,
+    "powerState": "VM running",
+    "priority": null,
+    "privateIps": "10.0.0.4",
+    "provisioningState": "Succeeded",
+    "proximityPlacementGroup": null,
+    "publicIps": "104.42.227.221",
+    "resourceGroup": "psg_networklab20190916",
+    "resources": null,
+    "storageProfile": {
+      "dataDisks": [],
+      "imageReference": {
+        "id": null,
+        "offer": "UbuntuServer",
+        "publisher": "Canonical",
+        "sku": "18.04-LTS",
+        "version": "latest"
+      },
+      "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "diffDiskSettings": null,
+        "diskSizeGb": 30,
+        "encryptionSettings": null,
+        "image": null,
+        "managedDisk": {
+          "id": "/subscriptions/535a7df7-2f2d-441e-9991-72add147f2a7/resourceGroups/psg_networklab20190916/providers/Microsoft.Compute/disks/AppServer_OsDisk_1_c5fcb966a3c84e50bc728fad445fe069",
+          "resourceGroup": "psg_networklab20190916",
+          "storageAccountType": "Premium_LRS"
+        },
+        "name": "AppServer_OsDisk_1_c5fcb966a3c84e50bc728fad445fe069",
+        "osType": "Linux",
+        "vhd": null,
+        "writeAcceleratorEnabled": null
+      }
+    },
+    "tags": {},
+    "type": "Microsoft.Compute/virtualMachines",
+    "virtualMachineScaleSet": null,
+    "vmId": "ef334264-0cd2-4301-84ce-16f06a0560b5",
+    "zones": null
+  },
+  {
+    "additionalCapabilities": null,
+    "availabilitySet": null,
+    "billingProfile": null,
+    "diagnosticsProfile": null,
+    "evictionPolicy": null,
+    "fqdns": "",
+    "hardwareProfile": {
+      "vmSize": "Standard_B1ls"
+    },
+    "host": null,
+    "id": "/subscriptions/535a7df7-2f2d-441e-9991-72add147f2a7/resourceGroups/psg_networklab20190916/providers/Microsoft.Compute/virtualMachines/DataServer",
+    "identity": null,
+    "licenseType": null,
+    "location": "westus",
+    "macAddresses": "00-0D-3A-58-C9-1B",
+    "name": "DataServer",
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/535a7df7-2f2d-441e-9991-72add147f2a7/resourceGroups/psg_networklab20190916/providers/Microsoft.Network/networkInterfaces/DataServerVMNic",
+          "primary": null,
+          "resourceGroup": "psg_networklab20190916"
+        }
+      ]
+    },
+    "osProfile": {
+      "adminPassword": null,
+      "adminUsername": "azureuser",
+      "allowExtensionOperations": true,
+      "computerName": "DataServer",
+      "customData": null,
+      "linuxConfiguration": {
+        "disablePasswordAuthentication": false,
+        "provisionVmAgent": true,
+        "ssh": null
+      },
+      "requireGuestProvisionSignal": true,
+      "secrets": [],
+      "windowsConfiguration": null
+    },
+    "plan": null,
+    "powerState": "VM running",
+    "priority": null,
+    "privateIps": "10.0.1.4",
+    "provisioningState": "Succeeded",
+    "proximityPlacementGroup": null,
+    "publicIps": "23.100.40.243",
+    "resourceGroup": "psg_networklab20190916",
+    "resources": null,
+    "storageProfile": {
+      "dataDisks": [],
+      "imageReference": {
+        "id": null,
+        "offer": "UbuntuServer",
+        "publisher": "Canonical",
+        "sku": "18.04-LTS",
+        "version": "latest"
+      },
+      "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "diffDiskSettings": null,
+        "diskSizeGb": 30,
+        "encryptionSettings": null,
+        "image": null,
+        "managedDisk": {
+          "id": "/subscriptions/535a7df7-2f2d-441e-9991-72add147f2a7/resourceGroups/psg_networklab20190916/providers/Microsoft.Compute/disks/DataServer_OsDisk_1_4843e159259f4052919a08ba4c899d81",
+          "resourceGroup": "psg_networklab20190916",
+          "storageAccountType": "Premium_LRS"
+        },
+        "name": "DataServer_OsDisk_1_4843e159259f4052919a08ba4c899d81",
+        "osType": "Linux",
+        "vhd": null,
+        "writeAcceleratorEnabled": null
+      }
+    },
+    "tags": {},
+    "type": "Microsoft.Compute/virtualMachines",
+    "virtualMachineScaleSet": null,
+    "vmId": "459e6a67-b839-4452-8b5e-6d799e0345ad",
+    "zones": null
+  }
+]
