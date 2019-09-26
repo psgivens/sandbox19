@@ -18,8 +18,6 @@ $APPSERVERIP = az vm list-ip-addresses `
                  --name AppServer `
                  --query $publicip_query `
                  --output tsv
-
-
  
 $DATASERVERIP = az vm list-ip-addresses `
                  --resource-group $rg `
@@ -28,7 +26,9 @@ $DATASERVERIP = az vm list-ip-addresses `
                  --output tsv
 
 
-ssh azureuser@$APPSERVERI -o ConnectTimeout=5
+ssh azureuser@$APPSERVERIP -o ConnectTimeout=5
+
+ssh azureuser@$DATASERVERIP -o ConnectTimeout=5
 
 
 
